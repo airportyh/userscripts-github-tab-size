@@ -7,7 +7,7 @@
 // ==/UserScript==
 
 var SIZE = 2;
-var size = +GM_getValue ("size");
+var size = GM_getValue ("size");
 if (!size){
 	GM_setValue ("size", SIZE);
 	size = SIZE;
