@@ -19,6 +19,5 @@ GM_registerMenuCommand ("Change tab size", function (){
 	location.reload ();
 });
 
-document.body.style.tabSize = size;
-document.body.style.MozTabSize = size;
-document.body.style.oTabSize = size;
+GM_addStyle ("pre { tab-size: " + size + "; -moz-tab-size: " + size +
+		"; -o-tab-size: " + size + "}");
